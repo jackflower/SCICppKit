@@ -4,7 +4,6 @@ int main()
 {
 	sf::String title = L"Szczecińskie Collegium Informatyczne SCI 2020";
 
-	//Okno
 	sf::RenderWindow window(sf::VideoMode(800, 600), title);
 
 	
