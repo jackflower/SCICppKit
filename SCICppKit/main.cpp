@@ -1,5 +1,10 @@
 ﻿#include <SFML/Graphics.hpp>
 
+#include "Physical.h"
+#include "Warrior.h"
+#include "Knight.h"
+
+
 int main()
 {
 	sf::String title = L"Szczecińskie Collegium Informatyczne SCI 2020";
@@ -15,6 +20,15 @@ int main()
 	ship.setTexture(ship_graphics);
 	ship.setPosition(400.f, 300.f);
 
+	//2020-01-28
+	Physical physical_sci;
+	physical_sci.setTexture(ship_graphics);
+	physical_sci.setPosition(100, 100);
+	//2020-01-28
+
+
+	int wartownik = 0;
+
 	while (window.isOpen())
 	{
 		sf::Event event;
@@ -26,6 +40,7 @@ int main()
 
 		window.clear(sf::Color::White);
 		window.draw(ship);
+		physical_sci.draw(window);
 		window.display();
 	}
 
