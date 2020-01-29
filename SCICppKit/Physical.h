@@ -7,6 +7,7 @@
 ///
 ///Klasa reprezentuje obiekt posiadający reprezentację
 ///fizyczną i graficzną
+///
 class Physical
 {
 public:
