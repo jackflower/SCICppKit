@@ -1,18 +1,18 @@
-#ifndef H_CHARACTER_SCI
+ï»¿#ifndef H_CHARACTER_SCI
 #define H_CHARACTER_SCI
 
 #include "SFML/Graphics.hpp"
 
 ///
-///Klasa reprezentuje obiekt posiadaj¹cy reprezentacjê
-///fizyczn¹ i graficzn¹ - postaæ
+///Klasa reprezentuje obiekt posiadajÄ…cy reprezentacjÄ™
+///fizycznÄ… i graficznÄ… - postaÄ‡
 ///
 class Character
 {
 public:
 
 	///
-	///Konstruktor domyœlny
+	///Konstruktor domyÅ›lny
 	///
 	Character();
 
@@ -22,37 +22,37 @@ public:
 	~Character();
 
 	///
-	///Metoda ustawia pozycjê obiektu
+	///Metoda ustawia pozycjÄ™ obiektu
 	///
-	///@param x - wspó³rzêdna x
+	///@param x - wspÃ³Å‚rzÄ™dna x
 	///
-	///@param y - wspó³rzêdna y
+	///@param y - wspÃ³Å‚rzÄ™dna y
 	///
 	void setPosition(float x, float y);
 
 	///
-	///Metoda ustawia ¿ycie obiektu
+	///Metoda ustawia Å¼ycie obiektu
 	///
-	///@param health - ¿ycie
+	///@param health - Å¼ycie
 	///
 	void setHealth(float health);
 
 	///
-	///Metoda ustawia teksturê zawartego w klasie sf::Sprite'a
+	///Metoda ustawia teksturÄ™ zawartego w klasie sf::Sprite'a
 	///
-	///@param texture - sta³a referencja na teksturê
+	///@param texture - staÅ‚a referencja na teksturÄ™
 	///
 	void setGraphics(sf::Texture & texture);
 
 	///
-	///Metoda aktualizuj¹ca obiekt
+	///Metoda aktualizujÄ…ca obiekt
 	///
 	///@param dt - czas
 	///
 	virtual void update(float dt);
 
 	///
-	///Metoda rysuj¹ca obiekt na kontekœcie graficznym - oknie
+	///Metoda rysujÄ…ca obiekt na kontekÅ›cie graficznym - oknie
 	///
 	///@param window - referencja na okno gry
 	///
@@ -62,7 +62,7 @@ public:
 
 protected:
 	sf::Sprite m_sprite;//kontekst graficzny
-	float m_health;//¿ycie...
+	float m_health;//Å¼ycie...
 private:
 
 	

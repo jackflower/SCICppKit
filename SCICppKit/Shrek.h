@@ -1,4 +1,4 @@
-#ifndef H_SHREK_SCI
+ï»¿#ifndef H_SHREK_SCI
 #define H_SHREK_SCI
 #include "Character.h"
 
@@ -10,12 +10,12 @@ class Shrek : public Character
 public:
 
 	///
-	///Konstruktor domyœlny 
+	///Konstruktor domyÅ›lny 
 	///
 	Shrek();
 
 	///
-	///Destruktor wirtualny *)poczytaæ...
+	///Destruktor wirtualny *)poczytaÄ‡...
 	///
 	virtual ~Shrek();
 

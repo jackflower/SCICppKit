@@ -1,7 +1,7 @@
-#include "Character.h"
+ï»¿#include "Character.h"
 
 
-//Konstruktor domyœlny
+//Konstruktor domyÅ›lny
 Character::Character()
 :
 	m_sprite{},
@@ -14,31 +14,31 @@ Character::~Character()
 {
 }
 
-//Metoda ustawia pozycjê obiektu
+//Metoda ustawia pozycjÄ™ obiektu
 void Character::setPosition(float x, float y)
 {
 	m_sprite.setPosition(x, y);
 }
 
-//Metoda ustawia ¿ycie obiektu
+//Metoda ustawia Å¼ycie obiektu
 void Character::setHealth(float health)
 {
 	m_health = health;
 }
 
-//Metoda ustawia teksturê zawartego w klasie sf::Sprite'a
+//Metoda ustawia teksturÄ™ zawartego w klasie sf::Sprite'a
 void Character::setGraphics(sf::Texture & texture)
 {
 	m_sprite.setTexture(texture);
 }
 
-//Metoda aktualizuj¹ca obiekt
+//Metoda aktualizujÄ…ca obiekt
 void Character::update(float dt)
 {
 	//to do...
 }
 
-//Metoda rysuj¹ca obiekt na kontekœcie graficznym - oknie
+//Metoda rysujÄ…ca obiekt na kontekÅ›cie graficznym - oknie
 void Character::draw(sf::RenderWindow & window) const
 {
 	window.draw(m_sprite);

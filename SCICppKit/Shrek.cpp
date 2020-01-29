@@ -1,12 +1,12 @@
-#include "Shrek.h"
+ï»¿#include "Shrek.h"
 
 
-//Konstruktor domyœlny 
+//Konstruktor domyÅ›lny 
 Shrek::Shrek()
 {
 }
 
-//Destruktor wirtualny *)poczytaæ...
+//Destruktor wirtualny *)poczytaÄ‡...
 Shrek::~Shrek()
 {
 }
