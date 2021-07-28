@@ -1,14 +1,9 @@
 ﻿#include <SFML/Graphics.hpp>
 
-#include "Physical.h"
-#include "Warrior.h"
-#include "Knight.h"
-#include "Character.h"
-#include "Shrek.h"
-
 
 int main()
 {
+
 	sf::String title = L"Szczecińskie Collegium Informatyczne SCI 2020";
 	sf::RenderWindow window(sf::VideoMode(800, 600), title);
 	
@@ -23,21 +18,6 @@ int main()
 	ship.setPosition(400.f, 300.f);
 
 
-	//2020-January...przechodzimy na używanie klas (obieltowość)
-	
-	sf::Texture swamp;
-	swamp.loadFromFile("../data/sci_ship_two.png");
-	
-	//2020 - testowanie BEGIN
-	Character janek;
-	janek.setHealth(120);
-	janek.setGraphics(ship_graphics);
-	Character czarny = janek;
-	czarny.setPosition(100, 200);
-	czarny.setGraphics(swamp);
-	int wartownik = 0;
-	//2020 - testowanie END
-
 	while (window.isOpen())
 	{
 		sf::Event event;
@@ -48,8 +28,6 @@ int main()
 		}
 
 		window.clear(sf::Color::White);
-		janek.draw(window);
-		czarny.draw(window);
 		window.draw(ship);
 		window.display();
 	}
